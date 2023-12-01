@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alegreya {
+  font-family: "Alegreya", serif;
+}
+
+.alegreya-sans {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+#home {
+  background-image: url(images/drew-coffman-1872.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: 100% 100%;
+  overflow: auto;
+  margin: auto;
+}
+
+#home .caption {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+#home .caption h1 {
+  font-size: 3.4375rem;
+  line-height: 91.2px;
+}
+
+#home .caption p {
+  font-size: 1.4375rem;
+}
+
+#home .btn {
+  padding: 17px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: white;
+  margin: 20px 10px;
+}
+
+#home .btn1 {
+  background-color: #72573f;
+  border-width: 0;
+}
+
+#home .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+#home .btn2 {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+#home .scroll {
+  width: 35px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 40%;
+  padding: 30px 20px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+/* ============================NAV======================== */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.795);
+  z-index: 99999;
+}
+
+#navbar-menu a {
+  color: rgb(147, 145, 145);
+  margin: 12px;
+}
+
+#navbar-menu li:hover a {
+  color: rgba(221, 170, 19, 0.911);
+}
+
+#navbar-menu .active {
+  color: rgba(221, 170, 19, 0.911);
+}
+
+#navbar-menu li:hover .active {
+  color: rgba(24, 23, 22, 0.611);
+}
+
+@media screen and (max-width: 992px) {
+  #navbar-menu {
+    background-color: rgba(255, 255, 255, 0.551);
+  }
+}
+
+/* ===========ABOUT============================= */
+
+#about img {
+  width: 90%;
+}
+
+#about .caption {
+  font-size: 18px;
+  color: #686868;
+}
+
+#about .caption h2 {
+  color: #303030;
+  line-height: 1.38em;
+}
+
+#about .caption p {
+  margin: 20px 0;
+}
+
+#about li {
+  margin-top: 25px;
+}
+
+#about i {
+  color: #8e7754;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ================OUR OFFER ============================ */
+
+#our-offer img {
+  width: 90%;
+}
+
+#our-offer .caption {
+  font-size: 18px;
+  color: #686868;
+}
+
+#our-offer .caption h2 {
+  color: #303030;
+  line-height: 1.38em;
+}
+
+#our-offer .caption p {
+  margin: 20px 0;
+}
+
+/* ==========================GALLERY============================ */
+
+#gallery img {
+  transition: all 0.3s;
+}
+
+#gallery .mycard:hover img {
+  transform: scale(1.3, 1.3);
+}
+
+/* ==========================CONTACT============================= */
+
+#contact p {
+  font-size: 17px;
+  line-height: 31.62px;
+  color: #686868;
+}
+
+#contact i {
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  background-color: #8e7754;
+  border-radius: 100%;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+#contact span {
+  font-size: 17px;
+  line-height: 31.62px;
+  color: #686868;
+}
+
+/* ===================FOOTER================================== */
+
+#footer-main {
+  background-color: #403d38;
+}
+
+#footer-main h4 {
+  font-size: 18px;
+  line-height: 24.84px;
+  font-family: "Alegreya", serif;
+  color: white;
+  margin: 0px 0px 25px;
+}
+
+#footer-main p {
+  line-height: 29.76px;
+  color: rgb(150 150 150);
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+#footer-main li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 6px;
+  padding-bottom: 7px;
+  color: rgb(150 150 150);
+}
+
+#footer-main li::before {
+  content: "\f105";
+  font-family: FontAwesome;
+  padding-right: 8px;
+  color: rgb(150 150 150);
+}
+
+#footer-main .widget-contact-details span {
+  color: rgb(150 150 150);
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  line-height: 31.62px;
+  margin-bottom: 15px;
+  padding-bottom: 7px;
+  margin-left: 10px;
+}
+
+#footer-main .widget-contact-details i {
+  color: rgb(150 150 150);
+}
+
+#footer-main .widget-contact-details a {
+  text-decoration: none;
+  color: rgb(150 150 150);
+}
+
+#footer-main .widget-contact-details::after {
+  content: "----------";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(images/contact-details-map.png) no-repeat center center;
+  opacity: 0.11;
+}
+
+#footer-bottom {
+  background-color: #353330;
+}
+
+#footer-bottom .copyright {
+  color: rgb(150 150 150);
+}
+
+#footer-bottom a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #686868;
+  background-color: #403d38;
+  text-align: center;
+  border-radius: 100%;
+  margin: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#footer-bottom a:hover {
+  background: #3b5998;
+  color: white;
+}
